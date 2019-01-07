@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wr2-Wy-HX2">
+                                <rect key="frame" x="87.5" y="243.5" width="200" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hinhDep-1507458888625" translatesAutoresizingMaskIntoConstraints="NO" id="kjm-Op-NZk">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="rAB-fX-TlK"/>
+                                            <constraint firstAttribute="height" constant="400" id="veY-mS-6yI"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kjm-Op-NZk" secondAttribute="bottom" id="DXS-6L-hcW"/>
+                                    <constraint firstItem="kjm-Op-NZk" firstAttribute="top" secondItem="wr2-Wy-HX2" secondAttribute="top" id="HZp-jO-n1w"/>
+                                    <constraint firstAttribute="height" constant="200" id="WWh-9s-wc4"/>
+                                    <constraint firstItem="kjm-Op-NZk" firstAttribute="leading" secondItem="wr2-Wy-HX2" secondAttribute="leading" id="YlW-OA-dFy"/>
+                                    <constraint firstAttribute="trailing" secondItem="kjm-Op-NZk" secondAttribute="trailing" id="jYs-qm-0hf"/>
+                                    <constraint firstAttribute="width" constant="200" id="pIa-3F-loV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wr2-Wy-HX2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CFL-Sa-RAl"/>
+                            <constraint firstItem="wr2-Wy-HX2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="en6-oi-3fy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hinhDep-1507458888625" width="956" height="1195"/>
+    </resources>
+</document>

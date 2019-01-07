@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_4_timers_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <timer width="129" height="26" alignment="left" minimumScaleFactor="0.5" previewedSeconds="3666" id="7es-cX-ZHL"/>
+                        <button width="1" alignment="left" title="Start Timer" id="V62-3X-6b9">
+                            <connections>
+                                <action selector="startTimerAction" destination="AgC-eL-Hgc" id="0P8-SA-pJ3"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset Timer" id="ct6-wI-imM">
+                            <connections>
+                                <action selector="resetTimerAction" destination="AgC-eL-Hgc" id="IIK-r0-WQ2"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" id="hNf-j9-wSq">
+                            <items>
+                                <timer alignment="right" verticalAlignment="center" id="qhn-jI-WBv"/>
+                                <label alignment="left" verticalAlignment="center" text="Elapsed Time:" id="e0y-ek-w4z">
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.4104459342786867" blue="0.34725358133661566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="elapsedTimer" destination="qhn-jI-WBv" id="25v-yA-2xW"/>
+                        <outlet property="myTimer" destination="7es-cX-ZHL" id="l95-ia-hVu"/>
+                        <outlet property="startStopButton" destination="V62-3X-6b9" id="XqT-pt-4gb"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

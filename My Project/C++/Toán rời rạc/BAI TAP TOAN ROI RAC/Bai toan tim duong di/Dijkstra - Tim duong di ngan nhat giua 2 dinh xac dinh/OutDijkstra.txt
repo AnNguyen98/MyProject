@@ -1,0 +1,2 @@
+Duong di ngan nhat tu dinh 1 den dinh 6 co trong so la: 13
+Duong di: 6 <--- 5 <--- 3 <--- 2 <--- 4 <--- 1

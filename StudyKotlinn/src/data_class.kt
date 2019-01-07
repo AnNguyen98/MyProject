@@ -1,0 +1,1 @@
+data class PhuongTien(val name:String, val price:Int, val colors:String)

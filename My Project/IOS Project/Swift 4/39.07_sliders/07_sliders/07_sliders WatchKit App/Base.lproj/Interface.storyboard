@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_7_sliders_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <slider width="1" alignment="left" verticalAlignment="center" value="1" maximum="2" steps="3" minimumImage="no" maximumImage="ok" id="rOd-Bs-21R">
+                            <connections>
+                                <action selector="sliderAction:" destination="AgC-eL-Hgc" id="OCa-f5-lZb"/>
+                            </connections>
+                        </slider>
+                        <slider width="1" alignment="left" verticalAlignment="center" continuous="YES" value="12" maximum="16" steps="3" id="5hy-Cd-X5k">
+                            <connections>
+                                <action selector="sizeSlider:" destination="AgC-eL-Hgc" id="zha-aY-Ut8"/>
+                            </connections>
+                        </slider>
+                        <separator alignment="left" verticalAlignment="center" id="Byd-I4-XEg"/>
+                        <group width="1" height="95" alignment="left" verticalAlignment="bottom" layout="vertical" id="lsY-xb-Uv8">
+                            <items>
+                                <slider width="1" alignment="left" maximum="3" steps="3" id="sYA-ml-v43">
+                                    <connections>
+                                        <action selector="bottomSliderAction:" destination="AgC-eL-Hgc" id="jg3-Oq-jFs"/>
+                                    </connections>
+                                </slider>
+                                <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="7j5-f6-UUh">
+                                    <color key="color" red="1" green="0.056107677723830074" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </slider>
+                            </items>
+                        </group>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" id="yNi-xN-OY4"/>
+                    </items>
+                    <connections>
+                        <outlet property="exampleLabel" destination="yNi-xN-OY4" id="Xm2-p3-t0r"/>
+                        <outlet property="mySizeSlider" destination="5hy-Cd-X5k" id="ze0-6L-zzX"/>
+                        <outlet property="redSlider" destination="7j5-f6-UUh" id="Tqr-Tk-W59"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="67.5"/>
+        </scene>
+    </scenes>
+</document>

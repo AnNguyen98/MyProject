@@ -1,0 +1,6 @@
+framework module Pods_SliderShowImage {
+  umbrella header "Pods-SliderShowImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

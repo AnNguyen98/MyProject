@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Map" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JXI-To-NRX">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JXI-To-NRX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="78u-vz-3gD"/>
+                            <constraint firstItem="JXI-To-NRX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BZV-sv-w3u"/>
+                            <constraint firstItem="JXI-To-NRX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="D3Q-98-vli"/>
+                            <constraint firstItem="JXI-To-NRX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="NCz-qM-7L4"/>
+                            <constraint firstItem="JXI-To-NRX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="PM2-KN-Tif"/>
+                            <constraint firstItem="JXI-To-NRX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="zt0-X1-akG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapKit" destination="JXI-To-NRX" id="e3h-p0-fGx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

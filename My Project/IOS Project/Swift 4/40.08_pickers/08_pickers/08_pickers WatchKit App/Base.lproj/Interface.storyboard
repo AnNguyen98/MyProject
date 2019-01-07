@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_8_pickers_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Label" textAlignment="center" id="NmT-3O-9ax"/>
+                        <picker height="58" alignment="left" focusStyle="sequence" id="kWC-8u-hxn">
+                            <connections>
+                                <action selector="upperPickerAction:" destination="AgC-eL-Hgc" id="HUK-IE-h7Z"/>
+                            </connections>
+                        </picker>
+                        <picker height="44" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="Ce8-vW-d72">
+                            <connections>
+                                <action selector="middlePickerAction:" destination="AgC-eL-Hgc" id="KGB-O7-D5E"/>
+                            </connections>
+                        </picker>
+                        <picker width="136" height="85" alignment="center" verticalAlignment="center" style="sequence" focusStyle="stack" id="OtN-MS-Th9">
+                            <connections>
+                                <action selector="lowerPickerAction:" destination="AgC-eL-Hgc" id="rQN-2S-xE8"/>
+                            </connections>
+                        </picker>
+                        <group width="1" height="150" alignment="left" verticalAlignment="bottom" id="vEC-db-xlH">
+                            <items>
+                                <picker width="75" height="75" alignment="center" verticalAlignment="center" style="sequence" focusStyle="stack" id="le8-Hx-Jj5"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="loadingGroup" destination="vEC-db-xlH" id="Grv-x5-OXf"/>
+                        <outlet property="loadingPicker" destination="le8-Hx-Jj5" id="qYy-CN-F6T"/>
+                        <outlet property="myLabel" destination="NmT-3O-9ax" id="zbY-OF-M7l"/>
+                        <outlet property="myPicker" destination="kWC-8u-hxn" id="moF-O3-QUO"/>
+                        <outlet property="mySecondPicker" destination="Ce8-vW-d72" id="IjX-Xr-jtf"/>
+                        <outlet property="myStackPicker" destination="OtN-MS-Th9" id="TlV-a0-Fbd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="83" y="42"/>
+        </scene>
+    </scenes>
+</document>

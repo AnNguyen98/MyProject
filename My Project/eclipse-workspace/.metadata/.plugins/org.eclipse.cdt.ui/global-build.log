@@ -1,0 +1,51 @@
+16:01:52 **** Build of configuration Debug for project HelloWorldd ****
+make all 
+Building file: ../src/HelloWorldd.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorldd.d" -MT"src/HelloWorldd.o" -o "src/HelloWorldd.o" "../src/HelloWorldd.cpp"
+Finished building: ../src/HelloWorldd.cpp
+ 
+Building target: HelloWorldd
+Invoking: Cross G++ Linker
+g++  -o "HelloWorldd"  ./src/HelloWorldd.o   
+Finished building target: HelloWorldd
+ 
+16:03:04 **** Incremental Build of configuration Debug for project HelloWorldd ****
+make all 
+make: Nothing to be done for `all'.
+16:03:06 **** Incremental Build of configuration Debug for project HelloWorldd ****
+make all 
+make: Nothing to be done for `all'.
+16:03:07 **** Incremental Build of configuration Debug for project HelloWorldd ****
+make all 
+make: Nothing to be done for `all'.
+16:03:07 **** Incremental Build of configuration Debug for project HelloWorldd ****
+make all 
+make: Nothing to be done for `all'.
+16:03:08 **** Incremental Build of configuration Debug for project HelloWorldd ****
+make all 
+make: Nothing to be done for `all'.
+16:06:30 **** Build of configuration Debug for project New ****
+make all 
+Building file: ../src/New.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/New.d" -MT"src/New.o" -o "src/New.o" "../src/New.cpp"
+Finished building: ../src/New.cpp
+ 
+Building target: New
+Invoking: MacOS X C++ Linker
+g++  -o "New"  ./src/New.o   
+Finished building target: New
+ 
+16:06:34 **** Incremental Build of configuration Debug for project New ****
+make all 
+make: Nothing to be done for `all'.
+16:06:57 **** Incremental Build of configuration Debug for project New ****
+make all 
+make: Nothing to be done for `all'.
+16:06:59 **** Incremental Build of configuration Debug for project New ****
+make all 
+make: Nothing to be done for `all'.
+16:07:06 **** Incremental Build of configuration Debug for project New ****
+make all 
+make: Nothing to be done for `all'.

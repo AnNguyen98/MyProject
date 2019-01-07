@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WKInterface_Label_example_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="29" alignment="left" text="My text" id="eQu-4e-StM">
+                            <color key="textColor" red="1" green="0.19336380689331689" blue="0.034261911999506345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="30"/>
+                        </label>
+                        <label alignment="left" text="My second label" id="y6h-Sy-l6U">
+                            <color key="textColor" red="1" green="0.046778572554590725" blue="0.84305274671871977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label alignment="left" text="Label" minimumScaleFactor="0.10000000000000001" id="KIL-Q0-daV"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="Iaf-5Y-gxP">
+                            <connections>
+                                <action selector="labelChangerButton" destination="AgC-eL-Hgc" id="Ebo-QM-p9V"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myBottomLabel" destination="KIL-Q0-daV" id="Ie5-3l-xkQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="69.743589743589752" y="34"/>
+        </scene>
+    </scenes>
+</document>

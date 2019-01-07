@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="my_first_watchOS_app_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="150" alignment="left" layout="vertical" id="zYF-rp-7OU">
+                            <items>
+                                <label width="1" alignment="center" text="Custom text for label" id="hao-Oc-9D5"/>
+                                <group width="136" height="26" alignment="left" id="Z0S-mG-yo4">
+                                    <items>
+                                        <button width="0.5" height="0.80000000000000004" alignment="left" title="Btn1" id="GbM-o0-sUK"/>
+                                        <button width="0.5" height="0.80000000000000004" alignment="right" title="Btn2" id="ha0-gb-aWg"/>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="Top" id="fCT-oF-us4"/>
+                                <label alignment="center" alpha="0.0" text="Center" id="CmG-KL-UEU"/>
+                                <label alignment="center" text="Bottom" id="osD-30-JPx"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="middleLabel" destination="CmG-KL-UEU" id="Sik-45-uj7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="116" y="122"/>
+        </scene>
+    </scenes>
+</document>

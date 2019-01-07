@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_4_activity_ring_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <activity height="111" alignment="left" id="VxY-Da-mzL"/>
+                        <group width="1" alignment="left" id="Diw-76-uco">
+                            <items>
+                                <label alignment="left" text="Goal:" id="7b4-2X-TcQ"/>
+                                <label alignment="right" text="Total:" id="0a8-8L-agY"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="CVK-SI-UTX">
+                            <items>
+                                <picker width="0.5" height="100" alignment="left" focusStyle="sequence" id="N8N-Wq-eV4">
+                                    <connections>
+                                        <action selector="exerciseGoalPickerWasSelected:" destination="AgC-eL-Hgc" id="EfS-9a-s3p"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.5" height="100" alignment="left" focusStyle="sequence" id="VGj-ah-wlX">
+                                    <connections>
+                                        <action selector="exerciseTotalPickerWasSelected:" destination="AgC-eL-Hgc" id="XU7-xe-s0j"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="minutesExercisedGoalPicker" destination="N8N-Wq-eV4" id="eWO-mH-a0I"/>
+                        <outlet property="minutesExercisedTotalPicker" destination="VGj-ah-wlX" id="jGw-Ti-htE"/>
+                        <outlet property="myActivityRingOutlet" destination="VxY-Da-mzL" id="YL2-Zs-50b"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="17"/>
+        </scene>
+    </scenes>
+</document>

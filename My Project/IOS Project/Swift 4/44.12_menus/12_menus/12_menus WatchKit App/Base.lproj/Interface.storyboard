@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_2_menus_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" id="MdC-xC-rfH"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Segue Button" id="xv0-t3-nv6">
+                            <connections>
+                                <segue destination="EKW-Cy-jWD" kind="modal" id="uoG-l7-wku"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Clear context menu" id="2Lc-vr-Ewj">
+                            <connections>
+                                <action selector="buttonWasTapped" destination="AgC-eL-Hgc" id="BSm-IP-9Eu"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="1sx-er-flO">
+                        <items>
+                            <menuItem title="Play" icon="play" id="Dhx-El-Fow"/>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="labelOutlet" destination="MdC-xC-rfH" id="aR6-1o-SOY"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Iau-pb-jK2">
+            <objects>
+                <controller id="EKW-Cy-jWD">
+                    <menu key="menu" id="bPg-Bf-7Lh">
+                        <items>
+                            <menuItem title="Share" icon="share" id="bhh-CP-AIr"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="303" y="35"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_3_dates_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <dateLabel alignment="left" minimumScaleFactor="0.69999999999999996" format="d/M/yy, h:mm a" id="75h-Lh-iM0">
+                            <color key="textColor" red="0.12716144340692737" green="1" blue="0.18685675319965855" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                            <date key="previewedDate" timeIntervalSinceReferenceDate="434610540">
+                                <!--2014-10-10 05:09:00 +0000-->
+                            </date>
+                        </dateLabel>
+                        <dateLabel width="116" height="44" alignment="left" verticalAlignment="center" numberOfLines="0" minimumScaleFactor="0.5" id="Kch-Ax-gEw">
+                            <color key="textColor" red="1" green="0.0" blue="0.065431795061399178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <dateFormatterStyle key="dateStyle" medium="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                        <dateLabel alignment="left" verticalAlignment="bottom" numberOfLines="0" id="aAj-AP-0p6">
+                            <color key="textColor" red="0.28401400407168087" green="0.38968831096744894" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <dateFormatterStyle key="dateStyle" full="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Show Persian Calendar" id="Aa9-tG-kl3">
+                            <connections>
+                                <action selector="topButtonAction" destination="AgC-eL-Hgc" id="GzA-M7-xii"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Show default calendar" id="CVO-Ed-d5l">
+                            <connections>
+                                <action selector="bottomButtonAction" destination="AgC-eL-Hgc" id="J35-Yv-Dz7"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="119" alignment="left" verticalAlignment="bottom" layout="vertical" id="a8a-2Q-W7Y">
+                            <items>
+                                <label alignment="center" text="Local Time" textAlignment="center" id="6jJ-ST-Heh">
+                                    <color key="textColor" red="0.19421578971960995" green="1" blue="0.080245621772444209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <dateLabel alignment="left" minimumScaleFactor="0.5" id="yyz-lC-taf">
+                                    <dateFormatterStyle key="dateStyle" medium="YES"/>
+                                    <dateFormatterStyle key="timeStyle" medium="YES"/>
+                                </dateLabel>
+                                <label alignment="center" text="London(U.K.) Time" minimumScaleFactor="0.90000000000000002" id="c3i-rR-N2o">
+                                    <color key="textColor" red="0.34640988058611188" green="0.44683674731458323" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <dateLabel alignment="left" minimumScaleFactor="0.5" id="8vE-6y-6Nv">
+                                    <dateFormatterStyle key="dateStyle" medium="YES"/>
+                                    <dateFormatterStyle key="timeStyle" medium="YES"/>
+                                </dateLabel>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="localDateObj" destination="yyz-lC-taf" id="6Y0-5M-Lx8"/>
+                        <outlet property="lowerDateObj" destination="aAj-AP-0p6" id="GL1-de-ZqO"/>
+                        <outlet property="middleDateObj" destination="Kch-Ax-gEw" id="Aby-ae-eso"/>
+                        <outlet property="ukDateObj" destination="8vE-6y-6Nv" id="HgQ-Zt-r67"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="35" y="76"/>
+        </scene>
+    </scenes>
+</document>

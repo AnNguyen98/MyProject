@@ -1,0 +1,12 @@
+
+Duong di ngan nhat tu dinh 1 den dinh 2 co trong so la: 1
+Duong di: 2 <--- 1
+
+Duong di ngan nhat tu dinh 1 den dinh 3 co trong so la: 4
+Duong di: 3 <--- 2 <--- 1
+
+Duong di ngan nhat tu dinh 1 den dinh 4 co trong so la: 3
+Duong di: 4 <--- 5 <--- 3 <--- 2 <--- 1
+
+Duong di ngan nhat tu dinh 1 den dinh 5 co trong so la: -1
+Duong di: 5 <--- 3 <--- 2 <--- 1

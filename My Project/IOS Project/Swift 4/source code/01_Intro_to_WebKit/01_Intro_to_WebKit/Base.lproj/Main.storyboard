@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="etR-Sn-po6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_Intro_to_WebKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrK-86-eHJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JrK-86-eHJ" firstAttribute="trailing" secondItem="DzU-8a-oe6" secondAttribute="trailing" id="5WN-yl-cTo"/>
+                            <constraint firstItem="JrK-86-eHJ" firstAttribute="leading" secondItem="DzU-8a-oe6" secondAttribute="leading" id="FoC-lc-VIg"/>
+                            <constraint firstItem="JrK-86-eHJ" firstAttribute="bottom" secondItem="DzU-8a-oe6" secondAttribute="bottom" id="M8N-6r-ZAo"/>
+                            <constraint firstItem="JrK-86-eHJ" firstAttribute="top" secondItem="DzU-8a-oe6" secondAttribute="top" id="tId-gx-rvb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DzU-8a-oe6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="gHq-sJ-laA">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Gmw-yv-yxX">
+                            <connections>
+                                <action selector="backButtonWasTapped:" destination="BYZ-38-t0r" id="FB6-me-dZU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Forward" id="i48-tx-O7P">
+                            <connections>
+                                <action selector="forwardButtonWasTapped:" destination="BYZ-38-t0r" id="o7q-1T-JGD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButtonOutlet" destination="Gmw-yv-yxX" id="ojh-xq-Fje"/>
+                        <outlet property="forwardButtonOutlet" destination="i48-tx-O7P" id="tFv-i4-4SC"/>
+                        <outlet property="viewContainer" destination="JrK-86-eHJ" id="8LK-lB-aPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="34.632683658170919"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TIa-8c-mVN">
+            <objects>
+                <viewController id="GbU-QI-dk5" customClass="SFViewController" customModule="_1_Intro_to_WebKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
+                    <view key="view" contentMode="scaleToFill" id="nYB-9F-pXM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUa-wi-2BB">
+                                <rect key="frame" x="134" y="291" width="107" height="84"/>
+                                <state key="normal" title="Launch Safari"/>
+                                <connections>
+                                    <action selector="safariButtonWasTapped:" destination="GbU-QI-dk5" eventType="touchUpInside" id="IYb-1b-nTY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H0p-a6-Rco" firstAttribute="bottom" secondItem="RUa-wi-2BB" secondAttribute="bottom" constant="292" id="DgV-SL-W7B"/>
+                            <constraint firstItem="RUa-wi-2BB" firstAttribute="leading" secondItem="H0p-a6-Rco" secondAttribute="leading" constant="134" id="HPg-ZV-p9g"/>
+                            <constraint firstItem="H0p-a6-Rco" firstAttribute="trailing" secondItem="RUa-wi-2BB" secondAttribute="trailing" constant="134" id="JGq-fF-yWa"/>
+                            <constraint firstItem="RUa-wi-2BB" firstAttribute="top" secondItem="H0p-a6-Rco" secondAttribute="top" constant="271" id="lnV-kK-uIa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H0p-a6-Rco"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B94-rL-shP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277.5999999999999" y="34.632683658170919"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K9u-Ao-H6K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="etR-Sn-po6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SrO-Yo-KYM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="M4U-oM-gXb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29v-Vt-Kw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559" y="35"/>
+        </scene>
+    </scenes>
+</document>

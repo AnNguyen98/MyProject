@@ -1,0 +1,7 @@
+Cay toi dai ngan nhat: 
+1 3
+2 3
+3 5
+4 5
+4 6
+Trong luong cay la: 56

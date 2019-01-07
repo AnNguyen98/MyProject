@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BaiTapCoreData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nVv-eJ-waB">
+                                <rect key="frame" x="67" y="118" width="241" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtToaDo:" destination="BYZ-38-t0r" eventType="editingChanged" id="GvI-K1-Js4"/>
+                                    <action selector="txtToaDo:" destination="BYZ-38-t0r" eventType="touchDown" id="Sg9-bt-vJd"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ewt-Su-CDS">
+                                <rect key="frame" x="67" y="281" width="241" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtToaDo:" destination="BYZ-38-t0r" eventType="editingChanged" id="IXg-4j-IZr"/>
+                                    <action selector="txtToaDo:" destination="BYZ-38-t0r" eventType="touchDown" id="cW0-80-1WB"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0i3-Ls-cAY">
+                                <rect key="frame" x="67.5" y="316" width="241" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="rmA-Tz-MRd"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="49" id="5dg-gP-iPQ" customClass="TableViewCellMe" customModule="BaiTapCoreData" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="241" height="49"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5dg-gP-iPQ" id="IKf-ed-dlE">
+                                            <rect key="frame" x="0.0" y="0.0" width="241" height="48.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ec-wE-hiN">
+                                <rect key="frame" x="163" y="617" width="48" height="30"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="btnSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q1m-FZ-Qvc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nVv-eJ-waB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6MM-GW-Fs9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2ec-wE-hiN" secondAttribute="bottom" constant="20" id="Bn5-Pf-FND"/>
+                            <constraint firstItem="0i3-Ls-cAY" firstAttribute="top" secondItem="Ewt-Su-CDS" secondAttribute="bottom" constant="5" id="EuB-PR-yed"/>
+                            <constraint firstItem="Ewt-Su-CDS" firstAttribute="height" secondItem="nVv-eJ-waB" secondAttribute="height" id="Fmi-hA-LjU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ec-wE-hiN" secondAttribute="trailing" constant="164" id="Jse-rZ-E9u"/>
+                            <constraint firstItem="0i3-Ls-cAY" firstAttribute="width" secondItem="Ewt-Su-CDS" secondAttribute="width" id="Kp3-2I-zKF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nVv-eJ-waB" secondAttribute="trailing" constant="67" id="LoC-UN-zrV"/>
+                            <constraint firstItem="0i3-Ls-cAY" firstAttribute="centerX" secondItem="Ewt-Su-CDS" secondAttribute="centerX" id="Qin-TL-y1n"/>
+                            <constraint firstItem="nVv-eJ-waB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="Tml-Ez-CSJ"/>
+                            <constraint firstItem="Ewt-Su-CDS" firstAttribute="top" secondItem="nVv-eJ-waB" secondAttribute="bottom" constant="133" id="VNA-uF-O5H"/>
+                            <constraint firstItem="Ewt-Su-CDS" firstAttribute="width" secondItem="nVv-eJ-waB" secondAttribute="width" id="lxQ-cd-fSQ"/>
+                            <constraint firstItem="Ewt-Su-CDS" firstAttribute="leading" secondItem="nVv-eJ-waB" secondAttribute="leading" id="rny-gu-cGE"/>
+                            <constraint firstItem="Ewt-Su-CDS" firstAttribute="centerX" secondItem="nVv-eJ-waB" secondAttribute="centerX" id="vlq-Gv-0RJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewMe" destination="0i3-Ls-cAY" id="n9b-HJ-PH9"/>
+                        <outlet property="txtText1" destination="nVv-eJ-waB" id="nTW-fR-3yc"/>
+                        <outlet property="txtText2" destination="Ewt-Su-CDS" id="DNy-fw-E4D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

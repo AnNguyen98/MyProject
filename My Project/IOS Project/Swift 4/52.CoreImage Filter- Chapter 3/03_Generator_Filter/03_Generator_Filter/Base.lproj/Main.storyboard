@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_3_Generator_Filter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KZ3-dO-unJ">
+                                <rect key="frame" x="49" y="139" width="315" height="301"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="301" id="Z44-q6-fK1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGA-9y-bej">
+                                <rect key="frame" x="83" y="472" width="248" height="30"/>
+                                <state key="normal" title="Generate QR Code"/>
+                                <connections>
+                                    <action selector="qrCodeButtonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jj-PH-vLb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0T-cL-1tv">
+                                <rect key="frame" x="83" y="524" width="248" height="30"/>
+                                <state key="normal" title="Generate Barcode"/>
+                                <connections>
+                                    <action selector="barcodeButtonWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFV-fU-dmT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Pb-c8-KlL">
+                                <rect key="frame" x="49" y="78" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V0T-cL-1tv" firstAttribute="top" secondItem="bGA-9y-bej" secondAttribute="bottom" constant="22" id="0E3-s3-bqP"/>
+                            <constraint firstItem="KZ3-dO-unJ" firstAttribute="top" secondItem="WAn-Z5-tah" secondAttribute="top" constant="119" id="3Ix-kL-LXN"/>
+                            <constraint firstItem="bGA-9y-bej" firstAttribute="top" secondItem="KZ3-dO-unJ" secondAttribute="bottom" constant="32" id="3NC-da-Fyj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KZ3-dO-unJ" secondAttribute="trailing" constant="30" id="5Lj-8w-Kma"/>
+                            <constraint firstItem="WAn-Z5-tah" firstAttribute="trailing" secondItem="V0T-cL-1tv" secondAttribute="trailing" constant="83" id="9bW-HR-Whp"/>
+                            <constraint firstItem="WAn-Z5-tah" firstAttribute="bottom" secondItem="bGA-9y-bej" secondAttribute="bottom" constant="234" id="CO1-9P-nF2"/>
+                            <constraint firstItem="KZ3-dO-unJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="Nap-uU-hIM"/>
+                            <constraint firstItem="WAn-Z5-tah" firstAttribute="bottom" secondItem="V0T-cL-1tv" secondAttribute="bottom" constant="182" id="Xcn-YO-7we"/>
+                            <constraint firstItem="WAn-Z5-tah" firstAttribute="trailing" secondItem="5Pb-c8-KlL" secondAttribute="trailing" constant="50" id="a86-y8-37f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bGA-9y-bej" secondAttribute="trailing" constant="63" id="bvB-er-yWd"/>
+                            <constraint firstItem="bGA-9y-bej" firstAttribute="top" secondItem="KZ3-dO-unJ" secondAttribute="bottom" constant="32" id="fjL-yx-v7L"/>
+                            <constraint firstItem="V0T-cL-1tv" firstAttribute="leading" secondItem="WAn-Z5-tah" secondAttribute="leading" constant="83" id="n1o-Fs-nvO"/>
+                            <constraint firstItem="bGA-9y-bej" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="63" id="nKJ-Go-FDq"/>
+                            <constraint firstItem="KZ3-dO-unJ" firstAttribute="top" secondItem="5Pb-c8-KlL" secondAttribute="bottom" constant="31" id="qgB-7b-M9G"/>
+                            <constraint firstItem="5Pb-c8-KlL" firstAttribute="leading" secondItem="WAn-Z5-tah" secondAttribute="leading" constant="49" id="w5e-79-ngo"/>
+                            <constraint firstItem="5Pb-c8-KlL" firstAttribute="top" secondItem="WAn-Z5-tah" secondAttribute="top" constant="58" id="zRs-jV-EBM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WAn-Z5-tah"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewOutlet" destination="KZ3-dO-unJ" id="Ijb-2G-Ruy"/>
+                        <outlet property="textFieldOutlet" destination="5Pb-c8-KlL" id="DRE-CR-9zT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="123.09782608695653"/>
+        </scene>
+    </scenes>
+</document>

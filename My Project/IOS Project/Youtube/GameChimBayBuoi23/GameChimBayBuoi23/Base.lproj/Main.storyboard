@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GameChimBayBuoi23" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundGame" translatesAutoresizingMaskIntoConstraints="NO" id="0bi-8L-R9i">
+                                <rect key="frame" x="0.0" y="20" width="3000" height="647"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="3000" id="P8a-vo-hkU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chim" translatesAutoresizingMaskIntoConstraints="NO" id="PuU-b5-uRg">
+                                <rect key="frame" x="137.5" y="293" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pfu-hG-qGI"/>
+                                    <constraint firstAttribute="width" constant="100" id="tgP-tp-cJW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-hT-dZj">
+                                <rect key="frame" x="375" y="20" width="100" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9Ic-rh-p59"/>
+                                    <constraint firstAttribute="height" constant="75" id="Rko-Kf-zYw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x2D-hT-dZj" secondAttribute="trailing" constant="-100" id="DK9-Me-O0G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0bi-8L-R9i" secondAttribute="bottom" id="STC-2L-Ak7"/>
+                            <constraint firstItem="0bi-8L-R9i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VMP-Ay-ccV"/>
+                            <constraint firstItem="PuU-b5-uRg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="deD-d4-UsL"/>
+                            <constraint firstItem="PuU-b5-uRg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fGF-d6-zQe"/>
+                            <constraint firstItem="x2D-hT-dZj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="fdS-TP-8Ly"/>
+                            <constraint firstItem="0bi-8L-R9i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jm1-qi-zCc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="contrantLeftImage" destination="VMP-Ay-ccV" id="Bf4-KW-tPy"/>
+                        <outlet property="imageBackGroundWidth" destination="P8a-vo-hkU" id="1TK-Z1-n5a"/>
+                        <outlet property="imageBird" destination="PuU-b5-uRg" id="j4C-Zz-26r"/>
+                        <outlet property="imagePlane" destination="x2D-hT-dZj" id="cpL-qa-ccr"/>
+                        <outlet property="imagePlaneTop" destination="fdS-TP-8Ly" id="nwa-sM-jug"/>
+                        <outlet property="imageRightPlaneY" destination="DK9-Me-O0G" id="QBQ-5m-AcK"/>
+                        <outlet property="imgBackgroundGame" destination="0bi-8L-R9i" id="U7u-2b-2j5"/>
+                        <outlet property="imgBirdCenterY" destination="deD-d4-UsL" id="Bf9-hl-cbQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundGame" width="3000" height="667"/>
+        <image name="Chim" width="100" height="100"/>
+        <image name="plane" width="100" height="75"/>
+    </resources>
+</document>

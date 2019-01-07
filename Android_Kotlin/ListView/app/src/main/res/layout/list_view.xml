@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="200px"
+               android:layout_height="200px"
+               android:id="@+id/img_listView"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <TextView android:layout_width="match_parent"
+                  android:layout_marginTop="30px"
+                  android:id="@+id/txtDicription"
+                  android:text="Mo ta hang hoa"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_marginTop="30px"
+                  android:id="@+id/txtChitiet"
+                  android:text="Day la chi tiet"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

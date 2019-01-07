@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_5_buttons_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Button1" id="05k-6C-I2y">
+                            <color key="titleColor" red="0.15739924634027558" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="1" green="0.12124042224359566" blue="0.62130854365217791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="22"/>
+                        </button>
+                        <button alignment="left" verticalAlignment="center" id="xwV-sM-m8k">
+                            <group key="contentGroup" width="1" alignment="left" id="9wd-s7-zK7">
+                                <items>
+                                    <imageView width="40" height="33" alignment="left" image="star" id="9bJ-qN-1Qr"/>
+                                    <label width="87" alignment="right" verticalAlignment="center" text="My UI Text" id="qwr-kd-GE2"/>
+                                </items>
+                                <color key="backgroundColor" red="0.19591219124881618" green="0.20016418787567589" blue="0.27682820431472077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </group>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" id="GzO-te-TTr">
+                            <connections>
+                                <action selector="lowerButtonAction" destination="AgC-eL-Hgc" id="ycz-df-fW7"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="1" id="Cmj-fI-7bf">
+                            <connections>
+                                <action selector="btn1Action" destination="AgC-eL-Hgc" id="a2o-ee-Ypj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="2" id="jKd-zO-sfo">
+                            <connections>
+                                <action selector="btn2Action" destination="AgC-eL-Hgc" id="bsB-1d-3NP"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="3" id="gif-R2-iXc">
+                            <connections>
+                                <action selector="btn3Action" destination="AgC-eL-Hgc" id="HdL-cZ-PqB"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="4" id="Um9-nd-Ova">
+                            <connections>
+                                <action selector="btn4Action" destination="AgC-eL-Hgc" id="llR-AN-kJG"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="5" id="abZ-Ku-TWJ">
+                            <connections>
+                                <action selector="btn5Action" destination="AgC-eL-Hgc" id="0Y5-aQ-oHg"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Reset" id="oqi-J6-xk5">
+                            <connections>
+                                <action selector="resetGameButton" destination="AgC-eL-Hgc" id="i1U-FV-Zb1"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btn1" destination="Cmj-fI-7bf" id="3wL-aj-3FY"/>
+                        <outlet property="btn2" destination="jKd-zO-sfo" id="oLi-Ai-qpA"/>
+                        <outlet property="btn3" destination="gif-R2-iXc" id="JkK-mR-A2L"/>
+                        <outlet property="btn4" destination="Um9-nd-Ova" id="5Ui-HD-d8N"/>
+                        <outlet property="btn5" destination="abZ-Ku-TWJ" id="m2k-qj-7bE"/>
+                        <outlet property="myLowerButton" destination="GzO-te-TTr" id="6a2-wi-gcW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="70" y="28.5"/>
+        </scene>
+    </scenes>
+</document>

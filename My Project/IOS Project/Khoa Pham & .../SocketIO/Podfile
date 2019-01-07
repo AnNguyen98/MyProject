@@ -1,0 +1,5 @@
+platform :ios, '9.0'
+use_frameworks!
+target 'SocketIO' do
+ pod 'Socket.IO-Client-Swift'
+end

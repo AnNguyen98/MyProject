@@ -1,0 +1,6 @@
+framework module Vertigo {
+  umbrella header "Vertigo-umbrella.h"
+
+  export *
+  module * { export * }
+}

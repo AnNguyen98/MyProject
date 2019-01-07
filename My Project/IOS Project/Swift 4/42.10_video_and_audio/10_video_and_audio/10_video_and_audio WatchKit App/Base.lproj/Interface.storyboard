@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_0_video_and_audio_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="185" alignment="left" layout="vertical" id="q5R-32-3Bm">
+                            <items>
+                                <inlineMovie width="1" height="100" alignment="left" id="LzF-6d-40N"/>
+                                <button width="1" height="24" alignment="left" title="Play" id="5Ep-uP-0AN">
+                                    <connections>
+                                        <action selector="playButtonAction" destination="AgC-eL-Hgc" id="3Yf-et-KDi"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="24" alignment="left" title="Pause" id="Y2j-dx-DOd">
+                                    <connections>
+                                        <action selector="pauseButtonAction" destination="AgC-eL-Hgc" id="Ze2-Lq-x7R"/>
+                                    </connections>
+                                </button>
+                                <button width="1" height="24" alignment="left" title="Restart" id="2oP-1b-tQT">
+                                    <connections>
+                                        <action selector="restartButtonAction" destination="AgC-eL-Hgc" id="h3p-34-jhc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="ppr-nO-Iw7"/>
+                        <movie width="1" height="100" alignment="left" posterImage="star" id="UND-zC-d3I"/>
+                        <movie width="136" height="50" alignment="left" id="AHH-rY-Fcs"/>
+                    </items>
+                    <connections>
+                        <outlet property="myInlineMovieOutlet" destination="LzF-6d-40N" id="4Z0-x6-oxC"/>
+                        <outlet property="myMovieOutlet" destination="UND-zC-d3I" id="30F-b3-HoQ"/>
+                        <outlet property="myOtherMovieOutlet" destination="AHH-rY-Fcs" id="oZK-eA-zW9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="149"/>
+        </scene>
+    </scenes>
+</document>

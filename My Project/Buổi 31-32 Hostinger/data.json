@@ -1,0 +1,16 @@
+[
+    {
+    "id":1,
+    "name":"Ao thun1",
+    "price":20000,
+    "image":"link"
+
+},
+{
+    "id":1,
+    "name":"Ao thun2",
+    "price":25000,
+    "image":"link"
+
+}
+]

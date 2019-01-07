@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_1_tables_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Results go here" id="LHe-8z-gUF"/>
+                        <table alignment="left" pagingScroll="YES" id="IDE-Ak-MaB">
+                            <items>
+                                <tableRow identifier="LabelRow" id="OPa-DU-TSJ" customClass="LabelRowController" customModule="_1_tables_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="QE7-Ep-Z4H">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="wal-Hf-lFJ"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabelOutlet" destination="wal-Hf-lFJ" id="SRb-jM-Fo8"/>
+                                        <segue destination="Mzy-Jr-VBG" kind="push" identifier="selectedRow" id="J8k-vU-7cq"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="DateRow" id="Ywd-wA-ENs" customClass="DateRowController" customModule="_1_tables_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="wrQ-vn-dKY">
+                                        <items>
+                                            <dateLabel alignment="center" verticalAlignment="center" minimumScaleFactor="0.5" id="P3u-DI-lXN">
+                                                <dateFormatterStyle key="dateStyle" medium="YES"/>
+                                                <dateFormatterStyle key="timeStyle" short="YES"/>
+                                            </dateLabel>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="myDateOutlet" destination="P3u-DI-lXN" id="rgX-pW-tH9"/>
+                                        <segue destination="Mzy-Jr-VBG" kind="push" identifier="selectedDateRow" id="UJ1-Sx-XZ0"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="myLabel" destination="LHe-8z-gUF" id="NKg-ca-OtL"/>
+                        <outlet property="myTableOutlet" destination="IDE-Ak-MaB" id="3Im-EP-OV5"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Label Detail Interface Controller-->
+        <scene sceneID="cNH-hq-Bwb">
+            <objects>
+                <controller id="Mzy-Jr-VBG" customClass="LabelDetailInterfaceController" customModule="_1_tables_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" id="lMx-Yx-Gf7">
+                            <color key="textColor" red="1" green="0.36197525995170821" blue="0.26519565413380919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <dateLabel alignment="center" verticalAlignment="center" id="Qhk-FZ-58E">
+                            <color key="textColor" red="0.20653743588459939" green="1" blue="0.090096564863720419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <dateFormatterStyle key="dateStyle" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                        </dateLabel>
+                    </items>
+                    <connections>
+                        <outlet property="dateDetailOutlet" destination="Qhk-FZ-58E" id="jTE-Jk-I63"/>
+                        <outlet property="labelDetailOutlet" destination="lMx-Yx-Gf7" id="6bT-B5-v4e"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="382" y="283"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UJ1-Sx-XZ0"/>
+    </inferredMetricsTieBreakers>
+</document>

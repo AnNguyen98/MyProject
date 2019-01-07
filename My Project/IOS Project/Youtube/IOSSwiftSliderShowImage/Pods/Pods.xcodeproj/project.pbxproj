@@ -1,0 +1,932 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		099778FC91309FF76BA7C10FAC167735 /* TGRImageZoomAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 311AA8ADC58794E442C8DB8864CC6F3B /* TGRImageZoomAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09BA154748A184906E461EA2C0DA2160 /* ic_cross_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 727A85F047AFF549F43580146E66DE49 /* ic_cross_white@2x.png */; };
+		138858D0453743E24FF7D8E441CC3196 /* UIImage+AspectFit.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B3669BEEED46283B4660A3109AEEE5 /* UIImage+AspectFit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1930984D3FBCC32637AB9A2819FC8FF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		2D1E666D63AB4A9C223479674F7F57FE /* ImageSlideshow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 608A90E362FD6AA3F0E64B1E1C26F5C8 /* ImageSlideshow-dummy.m */; };
+		2E0ED1FE6B3439EE68A8749DA402CB59 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9B3A5F6DA76EFD067DF5AC9FF7187 /* ActivityIndicator.swift */; };
+		35159BD36A418A4491C4875B17023E87 /* ImageSlideshow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB6F869830CC970DBD2DE56A8518BBE /* ImageSlideshow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C5C8AE65B05D0EB188EFF71E5C67ED2 /* FullScreenSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A9F91027EECE11D6E930CD3ABCF3F /* FullScreenSlideshowViewController.swift */; };
+		3E90FFCA763CCB71B37F33DD74438220 /* TGRImageZoomAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A29C63B2882F139CA2BF7FCCEA3BB73D /* TGRImageZoomAnimationController.m */; };
+		436EF04CFB537B57B23CCAEDCEFD4F2D /* Pods-IOSSwiftSliderShowImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B536BFE93A2EF55FE2F5AC2DC41C502B /* Pods-IOSSwiftSliderShowImage-dummy.m */; };
+		4D6B06373311DA29DBC4AF161B197DDB /* Vertigo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7645583CB52DC3C14BB173FF64B95C1 /* Vertigo-dummy.m */; };
+		530C965B657D4F0782B24E0A6EDEC645 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		58888F08B0954CDCE646CBDB5E96FB92 /* ImageSlideshowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F28E42DCB4B13B3F463A6704F2E24E /* ImageSlideshowItem.swift */; };
+		63FF4B7324361CC51B8AD3DDC5335BE6 /* UIImage+AspectFit.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F97830B269222CE4563A503251500F /* UIImage+AspectFit.m */; };
+		70155EAA31B25AEE1606AADEC05FC200 /* Pods-IOSSwiftSliderShowImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC31CEB3212D2A87750C5BC7B8E071E5 /* Pods-IOSSwiftSliderShowImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8552F0934874C5DA057E1AD441509129 /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF1FC969090FCC1484EFF42CB1C95AB /* InputSource.swift */; };
+		8A5E0CC3EDC2F6107254EAE10EB92232 /* ZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2992C602072EB8E8D5CC0FD37E1BEB4D /* ZoomAnimatedTransitioning.swift */; };
+		97739A8502ADFCF968693013DEDADC65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		9775875DFFDE461F8486DE031EEA716C /* UIImage+AspectFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B8F7946C42FFB1E57277F5BE35297 /* UIImage+AspectFit.swift */; };
+		A429581C526DB0F10A0F0FF541EC4B77 /* Vertigo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 907EEB846C470E254CA12C20A725F46D /* Vertigo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA1C6E80984C7EDF3E51B13165BB8BD3 /* ImageSlideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD1DC1FEBDF924F305D38EEEB87E2D1 /* ImageSlideshow.swift */; };
+		B4076806BA14DBCC14475BB61714F3FB /* ImageSlideshow.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A46B0F5B3DC4A440D3F8CA0EA1CBABB3 /* ImageSlideshow.bundle */; };
+		B50F6FBC23ABFEBEE7035A172A1581FF /* TGRImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBAF2C10BBCFD42DDAA9BA91CE4403 /* TGRImageViewController.m */; };
+		CA397D7868622F091867C20B5C6FFACB /* ic_cross_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FBEF18FF49BD60AB8185CCF5D4CEB1 /* ic_cross_white@3x.png */; };
+		D3238703829438D89F428D1CA551A8BE /* TGRImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE885C31E3BCC5B65E9337B8057D2264 /* TGRImageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFBD0983A043606EEE258600C6DB43E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F2A3B481B591E21E0EA46DE445FF5C6F /* TGRImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE5E1CAF7F5E18515FDE8F7614F6E54 /* TGRImageViewController.xib */; };
+		F98542665AF048FA2D86DED67AD54084 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C48DC45575AA4C774F79869484321F /* UIImageView+Tools.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		648B8BED03CC7640C17EFFB90B30C1AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F78C1CFB1095A35CB73CA669ECFFCE66;
+			remoteInfo = "ImageSlideshow-ImageSlideshow";
+		};
+		6E3679C63E639D216EBAB2D79968BCAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF9DAEB157082D537A10095B51E9F5EA;
+			remoteInfo = ImageSlideshow;
+		};
+		99AA2137A454B1FDBA5A59C4559FE571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589BD58B5FF5B9C1B146E5801058C359;
+			remoteInfo = Vertigo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D38BCB097B264B137F2F36F20D31030 /* Pods-IOSSwiftSliderShowImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOSSwiftSliderShowImage.debug.xcconfig"; sourceTree = "<group>"; };
+		0EE7F5C7FCB951A5C5BE344E679F1F7A /* Pods-IOSSwiftSliderShowImage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOSSwiftSliderShowImage-resources.sh"; sourceTree = "<group>"; };
+		119B8F7946C42FFB1E57277F5BE35297 /* UIImage+AspectFit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AspectFit.swift"; path = "ImageSlideshow/Classes/Core/UIImage+AspectFit.swift"; sourceTree = "<group>"; };
+		16C48DC45575AA4C774F79869484321F /* UIImageView+Tools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Tools.swift"; path = "ImageSlideshow/Classes/Core/UIImageView+Tools.swift"; sourceTree = "<group>"; };
+		2992C602072EB8E8D5CC0FD37E1BEB4D /* ZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomAnimatedTransitioning.swift; path = ImageSlideshow/Classes/Core/ZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		311AA8ADC58794E442C8DB8864CC6F3B /* TGRImageZoomAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGRImageZoomAnimationController.h; path = Vertigo/TGRImageZoomAnimationController.h; sourceTree = "<group>"; };
+		38C6745507C16C1163280ABAB3DE3EF2 /* ImageSlideshow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageSlideshow.xcconfig; sourceTree = "<group>"; };
+		42B3669BEEED46283B4660A3109AEEE5 /* UIImage+AspectFit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AspectFit.h"; path = "Vertigo/UIImage+AspectFit.h"; sourceTree = "<group>"; };
+		608A90E362FD6AA3F0E64B1E1C26F5C8 /* ImageSlideshow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageSlideshow-dummy.m"; sourceTree = "<group>"; };
+		651A9F91027EECE11D6E930CD3ABCF3F /* FullScreenSlideshowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullScreenSlideshowViewController.swift; path = ImageSlideshow/Classes/Core/FullScreenSlideshowViewController.swift; sourceTree = "<group>"; };
+		69F28E42DCB4B13B3F463A6704F2E24E /* ImageSlideshowItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshowItem.swift; path = ImageSlideshow/Classes/Core/ImageSlideshowItem.swift; sourceTree = "<group>"; };
+		6A6D89CA0C0721A650BE7879436712D2 /* Pods-IOSSwiftSliderShowImage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IOSSwiftSliderShowImage-frameworks.sh"; sourceTree = "<group>"; };
+		6CD1DC1FEBDF924F305D38EEEB87E2D1 /* ImageSlideshow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSlideshow.swift; path = ImageSlideshow/Classes/Core/ImageSlideshow.swift; sourceTree = "<group>"; };
+		6EE2BBF70E133FC3C05CC76935D31EA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727A85F047AFF549F43580146E66DE49 /* ic_cross_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@2x.png"; path = "ImageSlideshow/Assets/ic_cross_white@2x.png"; sourceTree = "<group>"; };
+		7DE5EA33EB7883DAFDA55FD03B0987AE /* ResourceBundle-ImageSlideshow-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ImageSlideshow-Info.plist"; sourceTree = "<group>"; };
+		7F60F77926AA918483C9EAE23752ED90 /* Pods-IOSSwiftSliderShowImage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOSSwiftSliderShowImage-acknowledgements.plist"; sourceTree = "<group>"; };
+		8721DBA3158A408D4781EC245EC008B0 /* Pods-IOSSwiftSliderShowImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOSSwiftSliderShowImage.release.xcconfig"; sourceTree = "<group>"; };
+		907EEB846C470E254CA12C20A725F46D /* Vertigo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vertigo-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99284583C63E98DE9605C9FADF0F83E1 /* Vertigo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Vertigo.framework; path = Vertigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29C63B2882F139CA2BF7FCCEA3BB73D /* TGRImageZoomAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TGRImageZoomAnimationController.m; path = Vertigo/TGRImageZoomAnimationController.m; sourceTree = "<group>"; };
+		A46B0F5B3DC4A440D3F8CA0EA1CBABB3 /* ImageSlideshow.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ImageSlideshow.bundle; path = ImageSlideshow.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D4C6B86BDACA5EBAD9F89379882222 /* Pods-IOSSwiftSliderShowImage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOSSwiftSliderShowImage-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ADE5E1CAF7F5E18515FDE8F7614F6E54 /* TGRImageViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TGRImageViewController.xib; path = Vertigo/TGRImageViewController.xib; sourceTree = "<group>"; };
+		B536BFE93A2EF55FE2F5AC2DC41C502B /* Pods-IOSSwiftSliderShowImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOSSwiftSliderShowImage-dummy.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B64939CF938FF38A6B392CD20287BCBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7645583CB52DC3C14BB173FF64B95C1 /* Vertigo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Vertigo-dummy.m"; sourceTree = "<group>"; };
+		B8058CF59B6C6A5B86E6FD75D9BFFA81 /* Vertigo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Vertigo-prefix.pch"; sourceTree = "<group>"; };
+		B879479B3C32F8930A2682FF0EFCC03D /* Pods-IOSSwiftSliderShowImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IOSSwiftSliderShowImage.modulemap"; sourceTree = "<group>"; };
+		C38077980649428275028191F18E04A2 /* Vertigo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Vertigo.xcconfig; sourceTree = "<group>"; };
+		C4A3AD4318027BE4A8EA060083F670EE /* ImageSlideshow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImageSlideshow.framework; path = ImageSlideshow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BF4E55E3914CDAB6F174F4DF73DB69 /* Pods_IOSSwiftSliderShowImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IOSSwiftSliderShowImage.framework; path = "Pods-IOSSwiftSliderShowImage.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE885C31E3BCC5B65E9337B8057D2264 /* TGRImageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TGRImageViewController.h; path = Vertigo/TGRImageViewController.h; sourceTree = "<group>"; };
+		CEEBAF2C10BBCFD42DDAA9BA91CE4403 /* TGRImageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TGRImageViewController.m; path = Vertigo/TGRImageViewController.m; sourceTree = "<group>"; };
+		CEF1FC969090FCC1484EFF42CB1C95AB /* InputSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSource.swift; path = ImageSlideshow/Classes/Core/InputSource.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DDB6F869830CC970DBD2DE56A8518BBE /* ImageSlideshow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-umbrella.h"; sourceTree = "<group>"; };
+		DF5A83CF38161F0D822B91B72222F697 /* ImageSlideshow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ImageSlideshow.modulemap; sourceTree = "<group>"; };
+		E95B3EA8E05CB08C7E674990FAEEBF29 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC31CEB3212D2A87750C5BC7B8E071E5 /* Pods-IOSSwiftSliderShowImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IOSSwiftSliderShowImage-umbrella.h"; sourceTree = "<group>"; };
+		EFE9B3A5F6DA76EFD067DF5AC9FF7187 /* ActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = ImageSlideshow/Classes/Core/ActivityIndicator.swift; sourceTree = "<group>"; };
+		F5F97830B269222CE4563A503251500F /* UIImage+AspectFit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+AspectFit.m"; path = "Vertigo/UIImage+AspectFit.m"; sourceTree = "<group>"; };
+		F8E6786502E26A2E69ED48B5E67E8DBF /* ImageSlideshow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageSlideshow-prefix.pch"; sourceTree = "<group>"; };
+		F8FBEF18FF49BD60AB8185CCF5D4CEB1 /* ic_cross_white@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ic_cross_white@3x.png"; path = "ImageSlideshow/Assets/ic_cross_white@3x.png"; sourceTree = "<group>"; };
+		FDFDBDE02F11B4DF5FC78D71AE1D1075 /* Vertigo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Vertigo.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		026B28913A76603CD3862EA206FADA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFBD0983A043606EEE258600C6DB43E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2736247764169E4E354186C976D4C0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530C965B657D4F0782B24E0A6EDEC645 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3476275A9A29EC2D130A91279CE71816 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BD097B4D25E8162609CD36F08D9014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1930984D3FBCC32637AB9A2819FC8FF8 /* Foundation.framework in Frameworks */,
+				97739A8502ADFCF968693013DEDADC65 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BC3574022F624D67CC08AF7BF790FF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EFE9B3A5F6DA76EFD067DF5AC9FF7187 /* ActivityIndicator.swift */,
+				651A9F91027EECE11D6E930CD3ABCF3F /* FullScreenSlideshowViewController.swift */,
+				6CD1DC1FEBDF924F305D38EEEB87E2D1 /* ImageSlideshow.swift */,
+				69F28E42DCB4B13B3F463A6704F2E24E /* ImageSlideshowItem.swift */,
+				CEF1FC969090FCC1484EFF42CB1C95AB /* InputSource.swift */,
+				119B8F7946C42FFB1E57277F5BE35297 /* UIImage+AspectFit.swift */,
+				16C48DC45575AA4C774F79869484321F /* UIImageView+Tools.swift */,
+				2992C602072EB8E8D5CC0FD37E1BEB4D /* ZoomAnimatedTransitioning.swift */,
+				F739662619AE8B879054E7DB750B7138 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		100EFAA39DEC3A34269C905CFC713D48 /* Pods-IOSSwiftSliderShowImage */ = {
+			isa = PBXGroup;
+			children = (
+				E95B3EA8E05CB08C7E674990FAEEBF29 /* Info.plist */,
+				B879479B3C32F8930A2682FF0EFCC03D /* Pods-IOSSwiftSliderShowImage.modulemap */,
+				A5D4C6B86BDACA5EBAD9F89379882222 /* Pods-IOSSwiftSliderShowImage-acknowledgements.markdown */,
+				7F60F77926AA918483C9EAE23752ED90 /* Pods-IOSSwiftSliderShowImage-acknowledgements.plist */,
+				B536BFE93A2EF55FE2F5AC2DC41C502B /* Pods-IOSSwiftSliderShowImage-dummy.m */,
+				6A6D89CA0C0721A650BE7879436712D2 /* Pods-IOSSwiftSliderShowImage-frameworks.sh */,
+				0EE7F5C7FCB951A5C5BE344E679F1F7A /* Pods-IOSSwiftSliderShowImage-resources.sh */,
+				EC31CEB3212D2A87750C5BC7B8E071E5 /* Pods-IOSSwiftSliderShowImage-umbrella.h */,
+				0D38BCB097B264B137F2F36F20D31030 /* Pods-IOSSwiftSliderShowImage.debug.xcconfig */,
+				8721DBA3158A408D4781EC245EC008B0 /* Pods-IOSSwiftSliderShowImage.release.xcconfig */,
+			);
+			name = "Pods-IOSSwiftSliderShowImage";
+			path = "Target Support Files/Pods-IOSSwiftSliderShowImage";
+			sourceTree = "<group>";
+		};
+		1A2CB3761474BF6EC865397C6E8A5077 /* ImageSlideshow */ = {
+			isa = PBXGroup;
+			children = (
+				06BC3574022F624D67CC08AF7BF790FF /* Core */,
+				4F275935503524E5316FB4E3D609803F /* Support Files */,
+			);
+			name = ImageSlideshow;
+			path = ImageSlideshow;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4F275935503524E5316FB4E3D609803F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF5A83CF38161F0D822B91B72222F697 /* ImageSlideshow.modulemap */,
+				38C6745507C16C1163280ABAB3DE3EF2 /* ImageSlideshow.xcconfig */,
+				608A90E362FD6AA3F0E64B1E1C26F5C8 /* ImageSlideshow-dummy.m */,
+				F8E6786502E26A2E69ED48B5E67E8DBF /* ImageSlideshow-prefix.pch */,
+				DDB6F869830CC970DBD2DE56A8518BBE /* ImageSlideshow-umbrella.h */,
+				6EE2BBF70E133FC3C05CC76935D31EA9 /* Info.plist */,
+				7DE5EA33EB7883DAFDA55FD03B0987AE /* ResourceBundle-ImageSlideshow-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ImageSlideshow";
+			sourceTree = "<group>";
+		};
+		5D385AED5DDB3EAEA1C5B2E28144724F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A46B0F5B3DC4A440D3F8CA0EA1CBABB3 /* ImageSlideshow.bundle */,
+				C4A3AD4318027BE4A8EA060083F670EE /* ImageSlideshow.framework */,
+				C7BF4E55E3914CDAB6F174F4DF73DB69 /* Pods_IOSSwiftSliderShowImage.framework */,
+				99284583C63E98DE9605C9FADF0F83E1 /* Vertigo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				ED0E2D704C0F46D6AE13DB4CF94D045D /* Pods */,
+				5D385AED5DDB3EAEA1C5B2E28144724F /* Products */,
+				CA8089B0F78635CA7A0480C6A23DFBEE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9299BF0647540FF5FF37CEA9CF7DA0A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B64939CF938FF38A6B392CD20287BCBB /* Info.plist */,
+				FDFDBDE02F11B4DF5FC78D71AE1D1075 /* Vertigo.modulemap */,
+				C38077980649428275028191F18E04A2 /* Vertigo.xcconfig */,
+				B7645583CB52DC3C14BB173FF64B95C1 /* Vertigo-dummy.m */,
+				B8058CF59B6C6A5B86E6FD75D9BFFA81 /* Vertigo-prefix.pch */,
+				907EEB846C470E254CA12C20A725F46D /* Vertigo-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Vertigo";
+			sourceTree = "<group>";
+		};
+		CA8089B0F78635CA7A0480C6A23DFBEE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				100EFAA39DEC3A34269C905CFC713D48 /* Pods-IOSSwiftSliderShowImage */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CEA57BE7BCC046737E0342C642BC571D /* Vertigo */ = {
+			isa = PBXGroup;
+			children = (
+				CE885C31E3BCC5B65E9337B8057D2264 /* TGRImageViewController.h */,
+				CEEBAF2C10BBCFD42DDAA9BA91CE4403 /* TGRImageViewController.m */,
+				311AA8ADC58794E442C8DB8864CC6F3B /* TGRImageZoomAnimationController.h */,
+				A29C63B2882F139CA2BF7FCCEA3BB73D /* TGRImageZoomAnimationController.m */,
+				42B3669BEEED46283B4660A3109AEEE5 /* UIImage+AspectFit.h */,
+				F5F97830B269222CE4563A503251500F /* UIImage+AspectFit.m */,
+				FB867BD4705A052D518FC82699BD37D7 /* Resources */,
+				9299BF0647540FF5FF37CEA9CF7DA0A9 /* Support Files */,
+			);
+			name = Vertigo;
+			path = Vertigo;
+			sourceTree = "<group>";
+		};
+		ED0E2D704C0F46D6AE13DB4CF94D045D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A2CB3761474BF6EC865397C6E8A5077 /* ImageSlideshow */,
+				CEA57BE7BCC046737E0342C642BC571D /* Vertigo */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F739662619AE8B879054E7DB750B7138 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				727A85F047AFF549F43580146E66DE49 /* ic_cross_white@2x.png */,
+				F8FBEF18FF49BD60AB8185CCF5D4CEB1 /* ic_cross_white@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FB867BD4705A052D518FC82699BD37D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADE5E1CAF7F5E18515FDE8F7614F6E54 /* TGRImageViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2370C281D80AFA02F1DF5DCE2476ADD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35159BD36A418A4491C4875B17023E87 /* ImageSlideshow-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AFAF6BDCA2B36A206B3AD12C1AEC3C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70155EAA31B25AEE1606AADEC05FC200 /* Pods-IOSSwiftSliderShowImage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87744517B8B13A4E185D9FC2AC5988E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3238703829438D89F428D1CA551A8BE /* TGRImageViewController.h in Headers */,
+				099778FC91309FF76BA7C10FAC167735 /* TGRImageZoomAnimationController.h in Headers */,
+				138858D0453743E24FF7D8E441CC3196 /* UIImage+AspectFit.h in Headers */,
+				A429581C526DB0F10A0F0FF541EC4B77 /* Vertigo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09A1C833461AD73F8A32050CC623B063 /* Pods-IOSSwiftSliderShowImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459A5571978EC7F1D495C4A9687BA873 /* Build configuration list for PBXNativeTarget "Pods-IOSSwiftSliderShowImage" */;
+			buildPhases = (
+				2AAF6DC530BA474807A2BEAD762EC373 /* Sources */,
+				2736247764169E4E354186C976D4C0CD /* Frameworks */,
+				3AFAF6BDCA2B36A206B3AD12C1AEC3C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B656CA1E3E2C1F006B611DCEBFCBF75E /* PBXTargetDependency */,
+				14F07E92BBD5AB2BED3C82F445B1B967 /* PBXTargetDependency */,
+			);
+			name = "Pods-IOSSwiftSliderShowImage";
+			productName = "Pods-IOSSwiftSliderShowImage";
+			productReference = C7BF4E55E3914CDAB6F174F4DF73DB69 /* Pods_IOSSwiftSliderShowImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		589BD58B5FF5B9C1B146E5801058C359 /* Vertigo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0B898DE5962BAD7041B84A8A65E5E5 /* Build configuration list for PBXNativeTarget "Vertigo" */;
+			buildPhases = (
+				0CDAB0A20105CCDE4A65E9315F936683 /* Sources */,
+				F4BD097B4D25E8162609CD36F08D9014 /* Frameworks */,
+				87744517B8B13A4E185D9FC2AC5988E1 /* Headers */,
+				F4154991D2F33A7DE172C702468ADA53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vertigo;
+			productName = Vertigo;
+			productReference = 99284583C63E98DE9605C9FADF0F83E1 /* Vertigo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F78C1CFB1095A35CB73CA669ECFFCE66 /* ImageSlideshow-ImageSlideshow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2364EF59CB3F91819401D4E20514B183 /* Build configuration list for PBXNativeTarget "ImageSlideshow-ImageSlideshow" */;
+			buildPhases = (
+				E950F4FFCF6989C026CE35C8D7D2D564 /* Sources */,
+				3476275A9A29EC2D130A91279CE71816 /* Frameworks */,
+				AF9A6B337D1E64E067E8FBFE8DF0C68A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ImageSlideshow-ImageSlideshow";
+			productName = "ImageSlideshow-ImageSlideshow";
+			productReference = A46B0F5B3DC4A440D3F8CA0EA1CBABB3 /* ImageSlideshow.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FF9DAEB157082D537A10095B51E9F5EA /* ImageSlideshow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572A8A265BFC554C86AE66F109CFF7ED /* Build configuration list for PBXNativeTarget "ImageSlideshow" */;
+			buildPhases = (
+				EAD95A81D442D2B21009F2A0D926A760 /* Sources */,
+				026B28913A76603CD3862EA206FADA82 /* Frameworks */,
+				7ED38AB55FE8290E3A2AD91B8474B80C /* Resources */,
+				2370C281D80AFA02F1DF5DCE2476ADD2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB85D03DE9BA97198928E950FEFF4B3E /* PBXTargetDependency */,
+			);
+			name = ImageSlideshow;
+			productName = ImageSlideshow;
+			productReference = C4A3AD4318027BE4A8EA060083F670EE /* ImageSlideshow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5D385AED5DDB3EAEA1C5B2E28144724F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF9DAEB157082D537A10095B51E9F5EA /* ImageSlideshow */,
+				F78C1CFB1095A35CB73CA669ECFFCE66 /* ImageSlideshow-ImageSlideshow */,
+				09A1C833461AD73F8A32050CC623B063 /* Pods-IOSSwiftSliderShowImage */,
+				589BD58B5FF5B9C1B146E5801058C359 /* Vertigo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ED38AB55FE8290E3A2AD91B8474B80C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4076806BA14DBCC14475BB61714F3FB /* ImageSlideshow.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9A6B337D1E64E067E8FBFE8DF0C68A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BA154748A184906E461EA2C0DA2160 /* ic_cross_white@2x.png in Resources */,
+				CA397D7868622F091867C20B5C6FFACB /* ic_cross_white@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4154991D2F33A7DE172C702468ADA53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A3B481B591E21E0EA46DE445FF5C6F /* TGRImageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CDAB0A20105CCDE4A65E9315F936683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50F6FBC23ABFEBEE7035A172A1581FF /* TGRImageViewController.m in Sources */,
+				3E90FFCA763CCB71B37F33DD74438220 /* TGRImageZoomAnimationController.m in Sources */,
+				63FF4B7324361CC51B8AD3DDC5335BE6 /* UIImage+AspectFit.m in Sources */,
+				4D6B06373311DA29DBC4AF161B197DDB /* Vertigo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AAF6DC530BA474807A2BEAD762EC373 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436EF04CFB537B57B23CCAEDCEFD4F2D /* Pods-IOSSwiftSliderShowImage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E950F4FFCF6989C026CE35C8D7D2D564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD95A81D442D2B21009F2A0D926A760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0ED1FE6B3439EE68A8749DA402CB59 /* ActivityIndicator.swift in Sources */,
+				3C5C8AE65B05D0EB188EFF71E5C67ED2 /* FullScreenSlideshowViewController.swift in Sources */,
+				2D1E666D63AB4A9C223479674F7F57FE /* ImageSlideshow-dummy.m in Sources */,
+				AA1C6E80984C7EDF3E51B13165BB8BD3 /* ImageSlideshow.swift in Sources */,
+				58888F08B0954CDCE646CBDB5E96FB92 /* ImageSlideshowItem.swift in Sources */,
+				8552F0934874C5DA057E1AD441509129 /* InputSource.swift in Sources */,
+				9775875DFFDE461F8486DE031EEA716C /* UIImage+AspectFit.swift in Sources */,
+				F98542665AF048FA2D86DED67AD54084 /* UIImageView+Tools.swift in Sources */,
+				8A5E0CC3EDC2F6107254EAE10EB92232 /* ZoomAnimatedTransitioning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14F07E92BBD5AB2BED3C82F445B1B967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Vertigo;
+			target = 589BD58B5FF5B9C1B146E5801058C359 /* Vertigo */;
+			targetProxy = 99AA2137A454B1FDBA5A59C4559FE571 /* PBXContainerItemProxy */;
+		};
+		B656CA1E3E2C1F006B611DCEBFCBF75E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageSlideshow;
+			target = FF9DAEB157082D537A10095B51E9F5EA /* ImageSlideshow */;
+			targetProxy = 6E3679C63E639D216EBAB2D79968BCAA /* PBXContainerItemProxy */;
+		};
+		CB85D03DE9BA97198928E950FEFF4B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ImageSlideshow-ImageSlideshow";
+			target = F78C1CFB1095A35CB73CA669ECFFCE66 /* ImageSlideshow-ImageSlideshow */;
+			targetProxy = 648B8BED03CC7640C17EFFB90B30C1AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E039D801DCBEF54F10D27A3DF8BC15B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C38077980649428275028191F18E04A2 /* Vertigo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Vertigo/Vertigo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Vertigo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Vertigo/Vertigo.modulemap";
+				PRODUCT_NAME = Vertigo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6AE89438040B032ABAD8BD12DAB36D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C6745507C16C1163280ABAB3DE3EF2 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImageSlideshow";
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/ResourceBundle-ImageSlideshow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		82D6947F00CF16DB954C257BA0B6467D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C6745507C16C1163280ABAB3DE3EF2 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImageSlideshow/ImageSlideshow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageSlideshow/ImageSlideshow.modulemap";
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9AC5D3A59961E3C1535154FCA8E228C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C6745507C16C1163280ABAB3DE3EF2 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImageSlideshow/ImageSlideshow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageSlideshow/ImageSlideshow.modulemap";
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BAE8458F4ECE1DD74D71EE01A5BFD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C38077980649428275028191F18E04A2 /* Vertigo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Vertigo/Vertigo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Vertigo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Vertigo/Vertigo.modulemap";
+				PRODUCT_NAME = Vertigo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6A8AB38DA9A061DC02F5664D381EC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C6745507C16C1163280ABAB3DE3EF2 /* ImageSlideshow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ImageSlideshow";
+				INFOPLIST_FILE = "Target Support Files/ImageSlideshow/ResourceBundle-ImageSlideshow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ImageSlideshow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DBBBF5B3D60E8B97A93F9D55291A2E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8721DBA3158A408D4781EC245EC008B0 /* Pods-IOSSwiftSliderShowImage.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IOSSwiftSliderShowImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IOSSwiftSliderShowImage/Pods-IOSSwiftSliderShowImage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_IOSSwiftSliderShowImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F38118FE93CCC160030CCD4C1F3D784B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D38BCB097B264B137F2F36F20D31030 /* Pods-IOSSwiftSliderShowImage.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IOSSwiftSliderShowImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IOSSwiftSliderShowImage/Pods-IOSSwiftSliderShowImage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_IOSSwiftSliderShowImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2364EF59CB3F91819401D4E20514B183 /* Build configuration list for PBXNativeTarget "ImageSlideshow-ImageSlideshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE89438040B032ABAD8BD12DAB36D76 /* Debug */,
+				D6A8AB38DA9A061DC02F5664D381EC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		459A5571978EC7F1D495C4A9687BA873 /* Build configuration list for PBXNativeTarget "Pods-IOSSwiftSliderShowImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38118FE93CCC160030CCD4C1F3D784B /* Debug */,
+				DBBBF5B3D60E8B97A93F9D55291A2E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572A8A265BFC554C86AE66F109CFF7ED /* Build configuration list for PBXNativeTarget "ImageSlideshow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D6947F00CF16DB954C257BA0B6467D /* Debug */,
+				9AC5D3A59961E3C1535154FCA8E228C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0B898DE5962BAD7041B84A8A65E5E5 /* Build configuration list for PBXNativeTarget "Vertigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BAE8458F4ECE1DD74D71EE01A5BFD5C /* Debug */,
+				1E039D801DCBEF54F10D27A3DF8BC15B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

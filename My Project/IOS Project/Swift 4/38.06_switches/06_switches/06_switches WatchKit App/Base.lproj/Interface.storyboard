@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_6_switches_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <switch width="136" height="35" alignment="left" value="YES" title="Toggle something" minimumScaleFactor="0.5" id="QiD-ZA-wwo">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <color key="tintColor" red="1" green="0.084040851152848539" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="upperSwitchAction:" destination="AgC-eL-Hgc" id="rGT-YT-Ar6"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="ykd-3G-4VS">
+                            <connections>
+                                <action selector="middleSwitchAction:" destination="AgC-eL-Hgc" id="t5Z-aV-J4w"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="xc3-nU-q1g"/>
+                        <separator alignment="left" id="ud8-Yj-TPS"/>
+                        <group width="1" alignment="left" id="bfK-TZ-vah">
+                            <items>
+                                <label alignment="left" text="The lights are: " id="33s-v6-3Hq"/>
+                                <label alignment="left" text="Off" id="gsl-tA-kiI"/>
+                            </items>
+                        </group>
+                        <switch width="1" alignment="left" value="YES" title="Lights" id="KVM-Bc-Kjx">
+                            <connections>
+                                <action selector="lightSwitcherAction:" destination="AgC-eL-Hgc" id="c3T-3R-fVv"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="evenLowerSwitchOutlet" destination="xc3-nU-q1g" id="HxV-VB-z48"/>
+                        <outlet property="lightSwitcherOutlet" destination="KVM-Bc-Kjx" id="c5a-dy-QGa"/>
+                        <outlet property="lightsIndicator" destination="gsl-tA-kiI" id="aA8-cE-a9e"/>
+                        <outlet property="lowerSwitchOutlet" destination="ykd-3G-4VS" id="cXC-7M-Jyy"/>
+                        <outlet property="upperSwitchOutlet" destination="QiD-ZA-wwo" id="iQs-xS-gWA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="24.410256410256412" y="34.871794871794876"/>
+        </scene>
+    </scenes>
+</document>

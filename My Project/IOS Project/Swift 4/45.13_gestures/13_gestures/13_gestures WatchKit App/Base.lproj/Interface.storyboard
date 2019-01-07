@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_3_gestures_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="71" alignment="left" id="yeh-un-cle">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Label" id="Nre-5E-rN8"/>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer numberOfTapsRequired="2" id="4Fn-D8-kDo">
+                                    <connections>
+                                        <action selector="tapGestureAction:" destination="AgC-eL-Hgc" id="FIn-JR-KZW"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <color key="backgroundColor" red="0.20526649746192893" green="0.18686692369908231" blue="0.15268390911923155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="1" height="56" alignment="left" id="Fc4-xi-ZT7">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Label" id="vDM-d2-DdC"/>
+                            </items>
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer direction="2" id="IQ6-1C-LZz">
+                                    <connections>
+                                        <action selector="swipeGestureAction:" destination="AgC-eL-Hgc" id="Ads-An-50y"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
+                            <color key="backgroundColor" red="0.0717096236603149" green="0.18727335085396052" blue="0.20526649746192893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </group>
+                        <group width="1" height="97" alignment="left" verticalAlignment="bottom" id="vCF-Ut-VPv">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Label" id="Y70-ic-Dty"/>
+                            </items>
+                            <gestureRecognizers>
+                                <panGestureRecognizer id="81d-8s-7pZ">
+                                    <connections>
+                                        <action selector="panGestureAction:" destination="AgC-eL-Hgc" id="mfK-hv-U9h"/>
+                                    </connections>
+                                </panGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                        <group width="1" height="80" alignment="left" id="sqe-Dl-Jez">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Label" id="37E-8w-xgi"/>
+                            </items>
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer id="cNg-Q6-z9q">
+                                    <connections>
+                                        <action selector="longPressGestureAction:" destination="AgC-eL-Hgc" id="NcP-tS-3i1"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="longPressGestureOutlet" destination="cNg-Q6-z9q" id="XNY-ta-gSi"/>
+                        <outlet property="longPressGroupOutlet" destination="sqe-Dl-Jez" id="kf1-Ul-Fny"/>
+                        <outlet property="longPressLabelOutlet" destination="37E-8w-xgi" id="r2g-33-s7I"/>
+                        <outlet property="panGestureGroupOutlet" destination="vCF-Ut-VPv" id="WaK-ad-cXa"/>
+                        <outlet property="panGestureLabelOutlet" destination="Y70-ic-Dty" id="Z8K-aR-1Nb"/>
+                        <outlet property="swipeGestureOutlet" destination="IQ6-1C-LZz" id="dRm-Ml-pSG"/>
+                        <outlet property="swipeGroupOutlet" destination="Fc4-xi-ZT7" id="vgE-Aw-kSf"/>
+                        <outlet property="swipeLabelOutlet" destination="vDM-d2-DdC" id="EEd-Tb-Wl0"/>
+                        <outlet property="tapGroupOutlet" destination="yeh-un-cle" id="6Fz-ZX-uw5"/>
+                        <outlet property="tapLabelOutlet" destination="Nre-5E-rN8" id="2cT-pQ-aQF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="83.5"/>
+        </scene>
+    </scenes>
+</document>

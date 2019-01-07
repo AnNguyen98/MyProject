@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_5_text_input_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" id="Z7V-RI-PEN">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="2hu-7b-QR8">
+                                    <connections>
+                                        <action selector="tapGestureAction:" destination="AgC-eL-Hgc" id="0b1-j0-feJ"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <color key="textColor" red="0.54459009248674795" green="0.69786299558997777" blue="0.81698128172588835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <imageView alignment="left" verticalAlignment="center" id="QTj-T3-xTj"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageOutlet" destination="QTj-T3-xTj" id="hbN-o7-SWc"/>
+                        <outlet property="labelOutlet" destination="Z7V-RI-PEN" id="kL3-jW-rDS"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

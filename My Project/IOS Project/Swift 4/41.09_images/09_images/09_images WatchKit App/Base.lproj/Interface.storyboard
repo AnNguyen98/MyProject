@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13034"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_9_images_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="52" height="55" alignment="left" image="star" contentMode="scaleAspectFit" id="7IP-ma-Wic">
+                            <color key="tintColor" red="1" green="0.090784095375404661" blue="0.1003657685148579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <imageView width="68" height="78" alignment="center" image="loading" contentMode="scaleAspectFit" animationDuration="2" id="PoT-tF-47A"/>
+                        <imageView width="109" height="56" alignment="center" image="percent" contentMode="scaleAspectFit" animationDuration="1" id="DAQ-HD-lme"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="25" y="33"/>
+        </scene>
+    </scenes>
+</document>
